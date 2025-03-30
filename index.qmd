@@ -1,9 +1,25 @@
-# Preface {.unnumbered}
+# Introducción a la Bitácora 📖
 
-This is a Quarto book.
+Esta bitácora tiene como finalidad consolidar y estructurar los aprendizajes adquiridos durante mi maestría en **Estadística y Ciencia de Datos**. Es un proyecto que organiza mis conocimientos de forma sistemática, combinando teoría, prácticas y análisis aplicado.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>. Esto es una prueba
+### Objetivos del Libro
+1. **Estructuración del conocimiento:** Unificar conceptos, técnicas y prácticas clave de estadística y ciencia de datos en un único lugar.  
+2. **Reproducibilidad:** Garantizar que los análisis, modelos y visualizaciones incluidos sean replicables.  
+3. **Referencia continua:** Crear un recurso que funcione como un manual de consulta para futuros proyectos académicos y profesionales.  
+4. **Desarrollo profesional:** Documentar mi progreso y habilidades, con un enfoque en aplicaciones prácticas y soluciones orientadas a los datos.
 
-```{r}
-1 + 1
-```
+### Contenido
+
+En esta primera etapa, este libro se está construyendo paso a paso como una herramienta de aprendizaje integral. En los próximos meses, se espera que evolucione para abarcar temas como:
+
+- Fundamentos de estadística descriptiva e inferencial.  
+- Programación en R y Python para explorar y analizar datos.  
+- Introducción a métodos avanzados como machine learning y análisis predictivo.  
+- Visualización de datos como herramienta clave para interpretar y comunicar resultados.  
+
+
+Esta bitácora no solo recopila información, sino que también busca establecer una metodología clara para el aprendizaje continuo en un campo en constante evolución.
+
+---
+
+Este libro es un reflejo de mi enfoque académico y técnico, pensado como un recurso funcional y duradero.

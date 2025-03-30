@@ -4,13 +4,12 @@ project:
 
 book:
   title: "Explorando Datos: Mi Bitácora Personal de Aprendizaje"
-  author: "Norah Jones"
-  date: "30/3/2025"
+  author: "Alexander Sánchez"
+  date: "30/03/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - ./qmd_files/Entendiendo los Datos de Prueba.qmd
+    - ./qmd_files/references.qmd
 
 bibliography: references.bib
 

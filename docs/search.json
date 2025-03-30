@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Explorando Datos: Mi Bitácora Personal de Aprendizaje",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books. Esto es una prueba\n\n1 + 1\n\n[1] 2",
+    "text": "1 Introducción a la Bitácora 📖\nEsta bitácora tiene como finalidad consolidar y estructurar los aprendizajes adquiridos durante mi maestría en Estadística y Ciencia de Datos. Es un proyecto que organiza mis conocimientos de forma sistemática, combinando teoría, prácticas y análisis aplicado.\n\n1.0.1 Objetivos del Libro\n\nEstructuración del conocimiento: Unificar conceptos, técnicas y prácticas clave de estadística y ciencia de datos en un único lugar.\n\nReproducibilidad: Garantizar que los análisis, modelos y visualizaciones incluidos sean replicables.\n\nReferencia continua: Crear un recurso que funcione como un manual de consulta para futuros proyectos académicos y profesionales.\n\nDesarrollo profesional: Documentar mi progreso y habilidades, con un enfoque en aplicaciones prácticas y soluciones orientadas a los datos.\n\n\n\n1.0.2 Contenido\nEn esta primera etapa, este libro se está construyendo paso a paso como una herramienta de aprendizaje integral. En los próximos meses, se espera que evolucione para abarcar temas como:\n\nFundamentos de estadística descriptiva e inferencial.\n\nProgramación en R y Python para explorar y analizar datos.\n\nIntroducción a métodos avanzados como machine learning y análisis predictivo.\n\nVisualización de datos como herramienta clave para interpretar y comunicar resultados.\n\nEsta bitácora no solo recopila información, sino que también busca establecer una metodología clara para el aprendizaje continuo en un campo en constante evolución.\n\nEste libro es un reflejo de mi enfoque académico y técnico, pensado como un recurso funcional y duradero.",
     "crumbs": [
-      "Preface"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción a la Bitácora 📖</span>"
     ]
   },
   {
@@ -37,6 +37,66 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "qmd_files/intro.html",
+    "href": "qmd_files/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "qmd_files/summary.html",
+    "href": "qmd_files/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "qmd_files/references.html",
+    "href": "qmd_files/references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "qmd_files/Entendiendo los Datos de Prueba.html",
+    "href": "qmd_files/Entendiendo los Datos de Prueba.html",
+    "title": "Entendiendo los Datos",
+    "section": "",
+    "text": "Prueba Diagnostica SAVIO\nAhora bien, esta grafica mostrada aqui se ve algo fea, voy a intentar corregir la manera en que se representa la tabla.\nLo que hago con la libreria ‘kableExtra’ es darle un formato mas bonito a la tabla, con la funcion kable le paso la base de datos y el formato que quiero que tenga, luego con kable_styling le doy un estilo de bootstrap y con scroll_box le doy un tamaño a la tabla.\nTeniendo en cuenta la base de datos datos_economicos.csv, estas son las descripciones de cada variable:\nLas preguntas son las siguientes\n# Tamaño de la muestra\ntamaño_muestra = nrow(df_datos_economicos)\ntamaño_muestra\n\n[1] 264\nlo que estamos haciendo aqui es contar el numero de filas que tiene la base de datos, esto nos da el tamaño de la muestra.\n# Valores faltantes en la variable VM\nvalores_faltantes_VM = sum(is.na(df_datos_economicos$VM))\nvalores_faltantes_VM\n\n[1] 0\nBasicamente seria sumar la cantidad de valores faltantes en la variable VM, esto se hace con la funcion is.na que nos devuelve un vector logico con TRUE si el valor es NA y FALSE si no lo es, luego sumamos los TRUE para saber cuantos valores faltantes hay.\n# Varianza de la variable VM\nvarianza_VM = var(df_datos_economicos$VM, na.rm = TRUE)\nvarianza_VM\n\n[1] 25061266\nLa varianza se calcula con la funcion var y se le pasa el vector de la variable VM, tambien se le pasa el argumento na.rm = TRUE para que ignore los valores faltantes.\n# Media de la variable VM\nmedia_VM = mean(df_datos_economicos$VM, na.rm = TRUE)\nmedia_VM\n\n[1] 20165.95\nLa media se calcula con la funcion mean y se le pasa el vector de la variable VM, tambien se le pasa el argumento na.rm = TRUE para que ignore los valores faltantes.\n# Categoría que más se repite en la variable Región\ncategoria_mas_repetida = names(which.max(table(df_datos_economicos$Region)))\ncategoria_mas_repetida\n\n[1] \"Sur\"\nLo que estamos haciendo aqui es contar cuantas veces se repite cada categoria en la variable Region, luego con la funcion which.max nos devuelve el nombre de la categoria que mas se repite.\n# Media de la inversión en publicidad para el tipo de tienda Mediana\nmedia_inversion_publicidad_mediana = mean(df_datos_economicos$IP[df_datos_economicos$TT == \"Mediana\"], na.rm = TRUE)\nmedia_inversion_publicidad_mediana\n\n[1] 4903.308\nLo que estamos haciendo aqui es filtrar la base de datos para que solo nos muestre los valores de la variable IP que correspondan a la categoria de tienda Mediana, luego calculamos la media de estos valores.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Entendiendo los Datos</span>"
+    ]
+  },
+  {
+    "objectID": "qmd_files/Entendiendo los Datos de Prueba.html#prueba-diagnostica-savio",
+    "href": "qmd_files/Entendiendo los Datos de Prueba.html#prueba-diagnostica-savio",
+    "title": "Entendiendo los Datos",
+    "section": "",
+    "text": "Región: Indica la zona geográfica donde están ubicadas las tiendas minoristas.\n\nTipo de Producto (TP): Representa la categoría de productos que venden las tiendas.\n\nInversión en Publicidad (IP) (en miles de pesos): Muestra cuánto dinero invierte cada tienda en publicidad.\n\nVentas Mensuales (VM) (en miles de pesos): Refleja los ingresos generados por las tiendas en ventas mensuales.\n\nEmpleados: Número de trabajadores que tiene cada tienda.\n\nDescuento Promedio (DP) (en porcentaje): Porcentaje promedio de descuento que ofrecen las tiendas.\n\nTamaño de la Tienda (TT): Define si el tamaño de la tienda es pequeño, mediano o grande.\n\nProveedor Principal (PP): Indica el principal proveedor de productos (Proveedor A, Proveedor B o Proveedor C).\n\n\n\nEl tamaño de la muestra.\n\n\n\n\n¿Cuántos valores faltantes hay en la variable VM?\n\n\n\n\n¿Cuál es la varianza de la variable VM?\n\n\n\n\n¿Cuál es la media de la variable VM?\n\n\n\n\n¿Cuál es la categoría que más se repite en la variable Región?\n\n\n\n\n¿Cuál es la media de la inversión en publicidad para el tipo de tienda Mediana?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Entendiendo los Datos</span>"
+    ]
+  },
+  {
+    "objectID": "qmd_files/Entendiendo los Datos de Prueba.html#graficos",
+    "href": "qmd_files/Entendiendo los Datos de Prueba.html#graficos",
+    "title": "Entendiendo los Datos",
+    "section": "Graficos",
+    "text": "Graficos\nVamos a intentar hacer un grafico de barras para la variable Región y un grafico de dispersión para la variable Inversión en Publicidad y Ventas Mensuales.\n\n# Cargamos la librería\nlibrary(ggplot2)\n\n\n# Grafico de barras para la variable Región\nggplot(df_datos_economicos, aes(x = Region)) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"Distribución de las tiendas por región\",\n       x = \"Región\",\n       y = \"Frecuencia\")\n\n\n\n\n\n\n\n\nEsto es un grafico usando la libreria ggplot2, lo que estoy haciendo es contar cuantas veces se repite cada categoria en la variable Region y luego graficar esto en un grafico de barras.\nAhora bien para crear un grafico de dispersión necesitamos tener en cuenta que la variable Inversión en Publicidad y Ventas Mensuales son de tipo numerico, por lo que podemos hacer un grafico de dispersión.\n\n# Grafico de dispersión para la variable Inversión en Publicidad y Ventas Mensuales\nggplot(df_datos_economicos, aes(x = IP, y = VM)) +\n  geom_point(color = \"steelblue\") +\n  labs(title = \"Relación entre la inversión en publicidad y las ventas mensuales\",\n       x = \"Inversión en Publicidad\",\n       y = \"Ventas Mensuales\")\n\n\n\n\n\n\n\n\nAun puedo hacer mas graficos, como un grafico de cajas para la variable Tipo de Producto y Ventas Mensuales.\n\n# Grafico de cajas para la variable Tipo de Producto y Ventas Mensuales\nggplot(df_datos_economicos, aes(x = TP, y = VM)) +\n  geom_boxplot(fill = \"steelblue\") +\n  labs(title = \"Distribución de las ventas mensuales por tipo de producto\",\n       x = \"Tipo de Producto\",\n       y = \"Ventas Mensuales\")\n\n\n\n\n\n\n\n\nEste grafico de caja lo que me intenta decir es que tan dispersos estan los datos de la variable Ventas Mensuales para cada categoria de la variable Tipo de Producto.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Entendiendo los Datos</span>"
     ]
   }
 ]

@@ -1,0 +1,156 @@
+# Entendiendo los Datos
+
+```{r}
+# Cargamos la librería
+library(readr)
+```
+
+```{r}
+
+# Cargamos la base de datos
+df_datos_economicos <- read_delim("../assets/data/Bases de datos para practicar/datos_economicos.csv", 
+                                  delim = ";", 
+                                  col_types = cols(), 
+                                  escape_double = FALSE,
+                                  locale = locale(decimal_mark = ",")
+                                  )
+head(df_datos_economicos)
+```
+Ahora bien, esta grafica mostrada aqui se ve algo fea, voy a intentar corregir la manera en que se representa la tabla.
+
+```{r}
+# Cargamos la librería
+library(kableExtra)
+```
+
+```{r}
+# Mostramos la base de datos de una manera más bonita
+kable(df_datos_economicos, "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "300px")
+
+```
+
+Lo que hago con la libreria 'kableExtra' es darle un formato mas bonito a la tabla, con la funcion `kable` le paso la base de datos y el formato que quiero que tenga, luego con `kable_styling` le doy un estilo de bootstrap y con `scroll_box` le doy un tamaño a la tabla.
+
+## Prueba Diagnostica SAVIO
+
+Teniendo en cuenta la base de datos `datos_economicos.csv`, estas son las descripciones de cada variable:
+
+-   **Región**: Indica la zona geográfica donde están ubicadas las tiendas minoristas.\
+-   **Tipo de Producto (TP)**: Representa la categoría de productos que venden las tiendas.\
+-   **Inversión en Publicidad (IP)** (en miles de pesos): Muestra cuánto dinero invierte cada tienda en publicidad.\
+-   **Ventas Mensuales (VM)** (en miles de pesos): Refleja los ingresos generados por las tiendas en ventas mensuales.\
+-   **Empleados**: Número de trabajadores que tiene cada tienda.\
+-   **Descuento Promedio (DP)** (en porcentaje): Porcentaje promedio de descuento que ofrecen las tiendas.\
+-   **Tamaño de la Tienda (TT)**: Define si el tamaño de la tienda es pequeño, mediano o grande.\
+-   **Proveedor Principal (PP)**: Indica el principal proveedor de productos (Proveedor A, Proveedor B o Proveedor C).
+
+Las preguntas son las siguientes
+
+-   **El tamaño de la muestra.**
+
+```{r}
+# Tamaño de la muestra
+tamaño_muestra = nrow(df_datos_economicos)
+tamaño_muestra
+```
+
+lo que estamos haciendo aqui es contar el numero de filas que tiene la base de datos, esto nos da el tamaño de la muestra.
+
+-   **¿Cuántos valores faltantes hay en la variable VM?**
+
+```{r}
+# Valores faltantes en la variable VM
+valores_faltantes_VM = sum(is.na(df_datos_economicos$VM))
+valores_faltantes_VM
+```
+
+Basicamente seria sumar la cantidad de valores faltantes en la variable VM, esto se hace con la funcion `is.na` que nos devuelve un vector logico con `TRUE` si el valor es `NA` y `FALSE` si no lo es, luego sumamos los `TRUE` para saber cuantos valores faltantes hay.
+
+-   **¿Cuál es la varianza de la variable VM?**
+
+```{r}
+# Varianza de la variable VM
+varianza_VM = var(df_datos_economicos$VM, na.rm = TRUE)
+varianza_VM
+```
+
+La varianza se calcula con la funcion `var` y se le pasa el vector de la variable VM, tambien se le pasa el argumento `na.rm = TRUE` para que ignore los valores faltantes.
+
+-   **¿Cuál es la media de la variable VM?**
+
+```{r}
+# Media de la variable VM
+media_VM = mean(df_datos_economicos$VM, na.rm = TRUE)
+media_VM
+```
+
+La media se calcula con la funcion `mean` y se le pasa el vector de la variable VM, tambien se le pasa el argumento `na.rm = TRUE` para que ignore los valores faltantes.
+
+-   **¿Cuál es la categoría que más se repite en la variable Región?**
+
+```{r}
+# Categoría que más se repite en la variable Región
+categoria_mas_repetida = names(which.max(table(df_datos_economicos$Region)))
+categoria_mas_repetida
+```
+
+Lo que estamos haciendo aqui es contar cuantas veces se repite cada categoria en la variable Region, luego con la funcion `which.max` nos devuelve el nombre de la categoria que mas se repite.
+
+-   **¿Cuál es la media de la inversión en publicidad para el tipo de tienda Mediana?**
+
+```{r}
+# Media de la inversión en publicidad para el tipo de tienda Mediana
+media_inversion_publicidad_mediana = mean(df_datos_economicos$IP[df_datos_economicos$TT == "Mediana"], na.rm = TRUE)
+media_inversion_publicidad_mediana
+```
+
+Lo que estamos haciendo aqui es filtrar la base de datos para que solo nos muestre los valores de la variable IP que correspondan a la categoria de tienda Mediana, luego calculamos la media de estos valores.
+
+## Graficos
+
+Vamos a intentar hacer un grafico de barras para la variable `Región` y un grafico de dispersión para la variable `Inversión en Publicidad` y `Ventas Mensuales`.
+
+```{r}
+# Cargamos la librería
+library(ggplot2)
+```
+
+```{r}
+# Grafico de barras para la variable Región
+ggplot(df_datos_economicos, aes(x = Region)) +
+  geom_bar(fill = "steelblue") +
+  labs(title = "Distribución de las tiendas por región",
+       x = "Región",
+       y = "Frecuencia")
+```
+
+Esto es un grafico usando la libreria `ggplot2`, lo que estoy haciendo es contar cuantas veces se repite cada categoria en la variable Region y luego graficar esto en un grafico de barras.
+
+Ahora bien para crear un grafico de dispersión necesitamos tener en cuenta que la variable `Inversión en Publicidad` y `Ventas Mensuales` son de tipo numerico, por lo que podemos hacer un grafico de dispersión.
+
+```{r}
+# Grafico de dispersión para la variable Inversión en Publicidad y Ventas Mensuales
+ggplot(df_datos_economicos, aes(x = IP, y = VM)) +
+  geom_point(color = "steelblue") +
+  labs(title = "Relación entre la inversión en publicidad y las ventas mensuales",
+       x = "Inversión en Publicidad",
+       y = "Ventas Mensuales")
+```
+
+Aun puedo hacer mas graficos, como un grafico de cajas para la variable `Tipo de Producto` y `Ventas Mensuales`.
+
+```{r}
+# Grafico de cajas para la variable Tipo de Producto y Ventas Mensuales
+ggplot(df_datos_economicos, aes(x = TP, y = VM)) +
+  geom_boxplot(fill = "steelblue") +
+  labs(title = "Distribución de las ventas mensuales por tipo de producto",
+       x = "Tipo de Producto",
+       y = "Ventas Mensuales")
+```
+
+Este grafico de caja lo que me intenta decir es que tan dispersos estan los datos de la variable Ventas Mensuales para cada categoria de la variable Tipo de Producto.
+
+
+

@@ -1,0 +1,3491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Entendiendo los Datos – Explorando Datos: Mi Bitácora Personal de Aprendizaje</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../qmd_files/references.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../qmd_files/Entendiendo los Datos de Prueba.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Entendiendo los Datos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Explorando Datos: Mi Bitácora Personal de Aprendizaje</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción a la Bitácora 📖</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd_files/Entendiendo los Datos de Prueba.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Entendiendo los Datos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd_files/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#prueba-diagnostica-savio" id="toc-prueba-diagnostica-savio" class="nav-link active" data-scroll-target="#prueba-diagnostica-savio">Prueba Diagnostica SAVIO</a></li>
+  <li><a href="#graficos" id="toc-graficos" class="nav-link" data-scroll-target="#graficos">Graficos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Entendiendo los Datos</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos la librería</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos la base de datos</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_datos_economicos <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"../assets/data/Bases de datos para practicar/datos_economicos.csv"</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">delim =</span> <span class="st">";"</span>, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">col_types =</span> <span class="fu">cols</span>(), </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">escape_double =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">locale =</span> <span class="fu">locale</span>(<span class="at">decimal_mark =</span> <span class="st">","</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                  )</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_datos_economicos)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 8
+  Region TP           TT      PP             IP    VM Empleados    DP
+  &lt;chr&gt;  &lt;chr&gt;        &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;
+1 Sur    Alimentos    Mediana Proveedor A  2947 21764        NA   6.3
+2 Norte  Electrónicos Pequeña Proveedor C  4719 22280        50  11.8
+3 Norte  Electrónicos Grande  &lt;NA&gt;         7950 23822        NA  10.1
+4 Sur    Ropa         Mediana Proveedor C  6839 21796        NA   5.1
+5 Sur    Ropa         Grande  Proveedor C  7267 25214        NA   5.7
+6 &lt;NA&gt;   Ropa         Grande  Proveedor C  4216 15823        50  16.3</code></pre>
+</div>
+</div>
+<p>Ahora bien, esta grafica mostrada aqui se ve algo fea, voy a intentar corregir la manera en que se representa la tabla.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos la librería</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostramos la base de datos de una manera más bonita</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df_datos_economicos, <span class="st">"html"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>, <span class="st">"condensed"</span>, <span class="st">"responsive"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">width =</span> <span class="st">"100%"</span>, <span class="at">height =</span> <span class="st">"300px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:300px; overflow-x: scroll; width:100%; ">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Region</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">TP</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">TT</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">PP</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">IP</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">VM</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">Empleados</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">DP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">2947</td>
+<td style="text-align: right;">21764</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4719</td>
+<td style="text-align: right;">22280</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">7950</td>
+<td style="text-align: right;">23822</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">10.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6839</td>
+<td style="text-align: right;">21796</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7267</td>
+<td style="text-align: right;">25214</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4216</td>
+<td style="text-align: right;">15823</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">16.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4399</td>
+<td style="text-align: right;">18491</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">9.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6335</td>
+<td style="text-align: right;">21194</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">8.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">8852</td>
+<td style="text-align: right;">25551</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">11.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6388</td>
+<td style="text-align: right;">23339</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">12.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3472</td>
+<td style="text-align: right;">20703</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">19.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">1557</td>
+<td style="text-align: right;">22064</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">15.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3156</td>
+<td style="text-align: right;">15882</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">9.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7738</td>
+<td style="text-align: right;">21769</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">18.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2400</td>
+<td style="text-align: right;">17996</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5032</td>
+<td style="text-align: right;">23046</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">7.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5544</td>
+<td style="text-align: right;">17496</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">10.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3407</td>
+<td style="text-align: right;">18559</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">10.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5863</td>
+<td style="text-align: right;">10834</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">12.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">8660</td>
+<td style="text-align: right;">14279</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">11.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4903</td>
+<td style="text-align: right;">17045</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">15.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6916</td>
+<td style="text-align: right;">20811</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">5.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6051</td>
+<td style="text-align: right;">21047</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">7.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5344</td>
+<td style="text-align: right;">20726</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">8.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3437</td>
+<td style="text-align: right;">20975</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">19.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3757</td>
+<td style="text-align: right;">24654</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">17.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3879</td>
+<td style="text-align: right;">17015</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5001</td>
+<td style="text-align: right;">18553</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">8.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2392</td>
+<td style="text-align: right;">16047</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">11.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5322</td>
+<td style="text-align: right;">23439</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">11.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6367</td>
+<td style="text-align: right;">22898</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5109</td>
+<td style="text-align: right;">20453</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">12.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6707</td>
+<td style="text-align: right;">12193</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">13.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">2574</td>
+<td style="text-align: right;">22340</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6203</td>
+<td style="text-align: right;">10487</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">10.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7278</td>
+<td style="text-align: right;">22211</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3606</td>
+<td style="text-align: right;">17453</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">6.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">7144</td>
+<td style="text-align: right;">14227</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">7136</td>
+<td style="text-align: right;">21303</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">13.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4366</td>
+<td style="text-align: right;">24616</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">16.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6185</td>
+<td style="text-align: right;">15767</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5301</td>
+<td style="text-align: right;">19520</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">11.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4596</td>
+<td style="text-align: right;">19148</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">7129</td>
+<td style="text-align: right;">19763</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">11.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5611</td>
+<td style="text-align: right;">25890</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3764</td>
+<td style="text-align: right;">31845</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">17.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7724</td>
+<td style="text-align: right;">23085</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">17.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">7235</td>
+<td style="text-align: right;">20780</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">14.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3295</td>
+<td style="text-align: right;">17017</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3407</td>
+<td style="text-align: right;">34792</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6595</td>
+<td style="text-align: right;">14763</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">5.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4140</td>
+<td style="text-align: right;">24557</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6174</td>
+<td style="text-align: right;">24455</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">8.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5455</td>
+<td style="text-align: right;">15025</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">6.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6684</td>
+<td style="text-align: right;">19797</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">18.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6492</td>
+<td style="text-align: right;">21615</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">19.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5218</td>
+<td style="text-align: right;">15261</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">18.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6031</td>
+<td style="text-align: right;">22251</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">15.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4235</td>
+<td style="text-align: right;">11702</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6586</td>
+<td style="text-align: right;">27210</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">13.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">7613</td>
+<td style="text-align: right;">12902</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">6.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5180</td>
+<td style="text-align: right;">16835</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">13.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">2581</td>
+<td style="text-align: right;">18562</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">7.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4727</td>
+<td style="text-align: right;">23803</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">-401</td>
+<td style="text-align: right;">10563</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">10.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4836</td>
+<td style="text-align: right;">24201</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">9.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6798</td>
+<td style="text-align: right;">16985</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">18.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4260</td>
+<td style="text-align: right;">19200</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">7.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3921</td>
+<td style="text-align: right;">23244</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">10.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3858</td>
+<td style="text-align: right;">14304</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">8.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5836</td>
+<td style="text-align: right;">18673</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">18.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4086</td>
+<td style="text-align: right;">17783</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">9.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2501</td>
+<td style="text-align: right;">17112</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7390</td>
+<td style="text-align: right;">21569</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">8.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4990</td>
+<td style="text-align: right;">19151</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">18.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3666</td>
+<td style="text-align: right;">14628</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">8.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7522</td>
+<td style="text-align: right;">30827</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">8.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5899</td>
+<td style="text-align: right;">12047</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">17.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3153</td>
+<td style="text-align: right;">23430</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">7.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4508</td>
+<td style="text-align: right;">17236</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">10.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4072</td>
+<td style="text-align: right;">14436</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">10.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">9105</td>
+<td style="text-align: right;">16423</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">7.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">8192</td>
+<td style="text-align: right;">14574</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">11.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4587</td>
+<td style="text-align: right;">25980</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">19.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4136</td>
+<td style="text-align: right;">19058</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">8.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6314</td>
+<td style="text-align: right;">16622</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">12.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">8324</td>
+<td style="text-align: right;">18133</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">14.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4783</td>
+<td style="text-align: right;">9357</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">7.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6093</td>
+<td style="text-align: right;">18245</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">13.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6147</td>
+<td style="text-align: right;">13418</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">16.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">604</td>
+<td style="text-align: right;">17461</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4875</td>
+<td style="text-align: right;">19685</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">13.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3851</td>
+<td style="text-align: right;">23338</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">8.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3991</td>
+<td style="text-align: right;">24240</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">6.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">8024</td>
+<td style="text-align: right;">14997</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">5.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4021</td>
+<td style="text-align: right;">19680</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5963</td>
+<td style="text-align: right;">16194</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">18.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6474</td>
+<td style="text-align: right;">22704</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">1890</td>
+<td style="text-align: right;">22633</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">12.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3429</td>
+<td style="text-align: right;">16223</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">19.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2491</td>
+<td style="text-align: right;">16465</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6952</td>
+<td style="text-align: right;">22844</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">19.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4469</td>
+<td style="text-align: right;">19272</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">5.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6057</td>
+<td style="text-align: right;">21101</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">13.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2106</td>
+<td style="text-align: right;">11372</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">7.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3396</td>
+<td style="text-align: right;">14794</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">10.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3372</td>
+<td style="text-align: right;">20641</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">11.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">775</td>
+<td style="text-align: right;">21054</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">13.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">7379</td>
+<td style="text-align: right;">30033</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">12.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4962</td>
+<td style="text-align: right;">20397</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">15.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3557</td>
+<td style="text-align: right;">19279</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">10.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4940</td>
+<td style="text-align: right;">13893</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">18.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3285</td>
+<td style="text-align: right;">23077</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">15.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3849</td>
+<td style="text-align: right;">19692</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">7.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2212</td>
+<td style="text-align: right;">18180</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">18.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5848</td>
+<td style="text-align: right;">17288</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">19.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4106</td>
+<td style="text-align: right;">18369</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">19.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1035</td>
+<td style="text-align: right;">25466</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">15.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">2574</td>
+<td style="text-align: right;">25322</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">5.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">336</td>
+<td style="text-align: right;">17498</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">9539</td>
+<td style="text-align: right;">28848</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">19.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4056</td>
+<td style="text-align: right;">26165</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">12.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5817</td>
+<td style="text-align: right;">23072</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">13.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3360</td>
+<td style="text-align: right;">26636</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">7.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6441</td>
+<td style="text-align: right;">30867</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">9.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5852</td>
+<td style="text-align: right;">25707</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">17.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4953</td>
+<td style="text-align: right;">14353</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">8.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4074</td>
+<td style="text-align: right;">22732</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">9.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">486</td>
+<td style="text-align: right;">26058</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">6.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5605</td>
+<td style="text-align: right;">19176</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">18.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6229</td>
+<td style="text-align: right;">19461</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4464</td>
+<td style="text-align: right;">14181</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">8.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6319</td>
+<td style="text-align: right;">11151</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">10.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">2078</td>
+<td style="text-align: right;">19457</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">9.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6370</td>
+<td style="text-align: right;">20629</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">10.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4014</td>
+<td style="text-align: right;">28010</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3080</td>
+<td style="text-align: right;">22766</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5256</td>
+<td style="text-align: right;">15639</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">7.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6266</td>
+<td style="text-align: right;">12313</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">9.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4864</td>
+<td style="text-align: right;">26084</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">16.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3803</td>
+<td style="text-align: right;">13625</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">15.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7347</td>
+<td style="text-align: right;">24738</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">15.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5687</td>
+<td style="text-align: right;">25125</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">8.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6157</td>
+<td style="text-align: right;">21699</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">18.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6790</td>
+<td style="text-align: right;">21954</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">18.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4219</td>
+<td style="text-align: right;">16915</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">13.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">7353</td>
+<td style="text-align: right;">20553</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5197</td>
+<td style="text-align: right;">21057</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">15.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6209</td>
+<td style="text-align: right;">18182</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">17.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6270</td>
+<td style="text-align: right;">20773</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">16.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5032</td>
+<td style="text-align: right;">15859</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">14.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">8554</td>
+<td style="text-align: right;">20524</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">13.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5312</td>
+<td style="text-align: right;">20640</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">9.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5824</td>
+<td style="text-align: right;">31920</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1366</td>
+<td style="text-align: right;">20098</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">9.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5600</td>
+<td style="text-align: right;">21020</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">7.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6215</td>
+<td style="text-align: right;">14841</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">18.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5197</td>
+<td style="text-align: right;">24448</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">13.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3792</td>
+<td style="text-align: right;">23155</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">19.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5568</td>
+<td style="text-align: right;">29521</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">12.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4185</td>
+<td style="text-align: right;">24454</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">12.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5724</td>
+<td style="text-align: right;">18177</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">11.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">2212</td>
+<td style="text-align: right;">13949</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3807</td>
+<td style="text-align: right;">11670</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">12.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2232</td>
+<td style="text-align: right;">15773</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">18.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">7660</td>
+<td style="text-align: right;">19149</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5034</td>
+<td style="text-align: right;">25518</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">19.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5110</td>
+<td style="text-align: right;">15538</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">16.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4749</td>
+<td style="text-align: right;">25110</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">10.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4131</td>
+<td style="text-align: right;">28399</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">17.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3678</td>
+<td style="text-align: right;">13683</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2872</td>
+<td style="text-align: right;">21600</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">15.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5293</td>
+<td style="text-align: right;">26761</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">10.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5930</td>
+<td style="text-align: right;">21354</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">16.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4417</td>
+<td style="text-align: right;">29321</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">18.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5792</td>
+<td style="text-align: right;">12993</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">13.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4189</td>
+<td style="text-align: right;">23800</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6113</td>
+<td style="text-align: right;">16471</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">18.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3834</td>
+<td style="text-align: right;">27079</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">12.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4319</td>
+<td style="text-align: right;">17551</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">18.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5630</td>
+<td style="text-align: right;">24952</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">6.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3785</td>
+<td style="text-align: right;">14773</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6295</td>
+<td style="text-align: right;">18841</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">8.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2142</td>
+<td style="text-align: right;">23763</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">19.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6255</td>
+<td style="text-align: right;">20970</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5110</td>
+<td style="text-align: right;">15244</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">7.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5019</td>
+<td style="text-align: right;">18598</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">13.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4452</td>
+<td style="text-align: right;">16602</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">17.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3205</td>
+<td style="text-align: right;">22055</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">10.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2507</td>
+<td style="text-align: right;">17822</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">7960</td>
+<td style="text-align: right;">29135</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">19.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6750</td>
+<td style="text-align: right;">20409</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">7.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1464</td>
+<td style="text-align: right;">19943</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">7661</td>
+<td style="text-align: right;">19333</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">13.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4627</td>
+<td style="text-align: right;">14385</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">17.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4054</td>
+<td style="text-align: right;">18430</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">19.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3805</td>
+<td style="text-align: right;">20369</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">12.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6114</td>
+<td style="text-align: right;">12807</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">8.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5214</td>
+<td style="text-align: right;">9133</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6351</td>
+<td style="text-align: right;">25116</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">444</td>
+<td style="text-align: right;">23635</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">14.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4046</td>
+<td style="text-align: right;">18308</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">10.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5959</td>
+<td style="text-align: right;">26008</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">8.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4488</td>
+<td style="text-align: right;">23978</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">7.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3878</td>
+<td style="text-align: right;">17068</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">14.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6587</td>
+<td style="text-align: right;">26963</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">17.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5990</td>
+<td style="text-align: right;">16780</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">15.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">1957</td>
+<td style="text-align: right;">25952</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">11.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4963</td>
+<td style="text-align: right;">11723</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5490</td>
+<td style="text-align: right;">21021</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">16.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3980</td>
+<td style="text-align: right;">18762</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">18.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6310</td>
+<td style="text-align: right;">18857</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">6.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4456</td>
+<td style="text-align: right;">28952</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">5.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4991</td>
+<td style="text-align: right;">19354</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6005</td>
+<td style="text-align: right;">31232</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">19.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5781</td>
+<td style="text-align: right;">21425</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">10.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4371</td>
+<td style="text-align: right;">26742</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5729</td>
+<td style="text-align: right;">24556</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">18.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5859</td>
+<td style="text-align: right;">7901</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">19.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">2451</td>
+<td style="text-align: right;">23611</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">4053</td>
+<td style="text-align: right;">34297</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7934</td>
+<td style="text-align: right;">14822</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">19.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">1374</td>
+<td style="text-align: right;">22897</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3544</td>
+<td style="text-align: right;">28991</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">13.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4280</td>
+<td style="text-align: right;">26916</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">11.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7103</td>
+<td style="text-align: right;">17614</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">6.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6050</td>
+<td style="text-align: right;">18563</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">16.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4216</td>
+<td style="text-align: right;">22565</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">10.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">6671</td>
+<td style="text-align: right;">19530</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">11.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7868</td>
+<td style="text-align: right;">8864</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">15.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">3646</td>
+<td style="text-align: right;">25702</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">12.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1233</td>
+<td style="text-align: right;">18536</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">17.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">2500</td>
+<td style="text-align: right;">21115</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">7.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">8107</td>
+<td style="text-align: right;">23147</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">10.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">7002</td>
+<td style="text-align: right;">15325</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">5.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2641</td>
+<td style="text-align: right;">17219</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">11.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">5397</td>
+<td style="text-align: right;">16418</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5735</td>
+<td style="text-align: right;">18921</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">5683</td>
+<td style="text-align: right;">29466</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">1054</td>
+<td style="text-align: right;">25670</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">9.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4609</td>
+<td style="text-align: right;">16353</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2146</td>
+<td style="text-align: right;">30817</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">17.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4602</td>
+<td style="text-align: right;">12603</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">16.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">1893</td>
+<td style="text-align: right;">12241</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">10.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">3195</td>
+<td style="text-align: right;">20958</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">9.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4390</td>
+<td style="text-align: right;">25455</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">12.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4373</td>
+<td style="text-align: right;">22017</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">12.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">6895</td>
+<td style="text-align: right;">24189</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">18.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">4107</td>
+<td style="text-align: right;">16498</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">6.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">7903</td>
+<td style="text-align: right;">17883</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">4679</td>
+<td style="text-align: right;">22893</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">6.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">887</td>
+<td style="text-align: right;">8753</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">14.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">7644</td>
+<td style="text-align: right;">23192</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">8.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Alimentos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5576</td>
+<td style="text-align: right;">23631</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">16.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6122</td>
+<td style="text-align: right;">23630</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">8.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3109</td>
+<td style="text-align: right;">20188</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">15.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">6911</td>
+<td style="text-align: right;">17844</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">14.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">2950</td>
+<td style="text-align: right;">12843</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">18.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Mediana</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">3868</td>
+<td style="text-align: right;">19829</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor C</td>
+<td style="text-align: right;">4388</td>
+<td style="text-align: right;">19875</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">19.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Centro</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Grande</td>
+<td style="text-align: left;">Proveedor A</td>
+<td style="text-align: right;">552</td>
+<td style="text-align: right;">17742</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">8.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">3197</td>
+<td style="text-align: right;">16547</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">7.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Ropa</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">5451</td>
+<td style="text-align: right;">17587</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">14.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Norte</td>
+<td style="text-align: left;">Electrónicos</td>
+<td style="text-align: left;">Pequeña</td>
+<td style="text-align: left;">Proveedor B</td>
+<td style="text-align: right;">7286</td>
+<td style="text-align: right;">22724</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">17.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+<p>Lo que hago con la libreria ‘kableExtra’ es darle un formato mas bonito a la tabla, con la funcion <code>kable</code> le paso la base de datos y el formato que quiero que tenga, luego con <code>kable_styling</code> le doy un estilo de bootstrap y con <code>scroll_box</code> le doy un tamaño a la tabla.</p>
+<section id="prueba-diagnostica-savio" class="level2">
+<h2 class="anchored" data-anchor-id="prueba-diagnostica-savio">Prueba Diagnostica SAVIO</h2>
+<p>Teniendo en cuenta la base de datos <code>datos_economicos.csv</code>, estas son las descripciones de cada variable:</p>
+<ul>
+<li><strong>Región</strong>: Indica la zona geográfica donde están ubicadas las tiendas minoristas.<br>
+</li>
+<li><strong>Tipo de Producto (TP)</strong>: Representa la categoría de productos que venden las tiendas.<br>
+</li>
+<li><strong>Inversión en Publicidad (IP)</strong> (en miles de pesos): Muestra cuánto dinero invierte cada tienda en publicidad.<br>
+</li>
+<li><strong>Ventas Mensuales (VM)</strong> (en miles de pesos): Refleja los ingresos generados por las tiendas en ventas mensuales.<br>
+</li>
+<li><strong>Empleados</strong>: Número de trabajadores que tiene cada tienda.<br>
+</li>
+<li><strong>Descuento Promedio (DP)</strong> (en porcentaje): Porcentaje promedio de descuento que ofrecen las tiendas.<br>
+</li>
+<li><strong>Tamaño de la Tienda (TT)</strong>: Define si el tamaño de la tienda es pequeño, mediano o grande.<br>
+</li>
+<li><strong>Proveedor Principal (PP)</strong>: Indica el principal proveedor de productos (Proveedor A, Proveedor B o Proveedor C).</li>
+</ul>
+<p>Las preguntas son las siguientes</p>
+<ul>
+<li><strong>El tamaño de la muestra.</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tamaño de la muestra</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tamaño_muestra <span class="ot">=</span> <span class="fu">nrow</span>(df_datos_economicos)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>tamaño_muestra</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 264</code></pre>
+</div>
+</div>
+<p>lo que estamos haciendo aqui es contar el numero de filas que tiene la base de datos, esto nos da el tamaño de la muestra.</p>
+<ul>
+<li><strong>¿Cuántos valores faltantes hay en la variable VM?</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Valores faltantes en la variable VM</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>valores_faltantes_VM <span class="ot">=</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(df_datos_economicos<span class="sc">$</span>VM))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>valores_faltantes_VM</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<p>Basicamente seria sumar la cantidad de valores faltantes en la variable VM, esto se hace con la funcion <code>is.na</code> que nos devuelve un vector logico con <code>TRUE</code> si el valor es <code>NA</code> y <code>FALSE</code> si no lo es, luego sumamos los <code>TRUE</code> para saber cuantos valores faltantes hay.</p>
+<ul>
+<li><strong>¿Cuál es la varianza de la variable VM?</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Varianza de la variable VM</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>varianza_VM <span class="ot">=</span> <span class="fu">var</span>(df_datos_economicos<span class="sc">$</span>VM, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>varianza_VM</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 25061266</code></pre>
+</div>
+</div>
+<p>La varianza se calcula con la funcion <code>var</code> y se le pasa el vector de la variable VM, tambien se le pasa el argumento <code>na.rm = TRUE</code> para que ignore los valores faltantes.</p>
+<ul>
+<li><strong>¿Cuál es la media de la variable VM?</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Media de la variable VM</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>media_VM <span class="ot">=</span> <span class="fu">mean</span>(df_datos_economicos<span class="sc">$</span>VM, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>media_VM</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20165.95</code></pre>
+</div>
+</div>
+<p>La media se calcula con la funcion <code>mean</code> y se le pasa el vector de la variable VM, tambien se le pasa el argumento <code>na.rm = TRUE</code> para que ignore los valores faltantes.</p>
+<ul>
+<li><strong>¿Cuál es la categoría que más se repite en la variable Región?</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Categoría que más se repite en la variable Región</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>categoria_mas_repetida <span class="ot">=</span> <span class="fu">names</span>(<span class="fu">which.max</span>(<span class="fu">table</span>(df_datos_economicos<span class="sc">$</span>Region)))</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>categoria_mas_repetida</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sur"</code></pre>
+</div>
+</div>
+<p>Lo que estamos haciendo aqui es contar cuantas veces se repite cada categoria en la variable Region, luego con la funcion <code>which.max</code> nos devuelve el nombre de la categoria que mas se repite.</p>
+<ul>
+<li><strong>¿Cuál es la media de la inversión en publicidad para el tipo de tienda Mediana?</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Media de la inversión en publicidad para el tipo de tienda Mediana</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>media_inversion_publicidad_mediana <span class="ot">=</span> <span class="fu">mean</span>(df_datos_economicos<span class="sc">$</span>IP[df_datos_economicos<span class="sc">$</span>TT <span class="sc">==</span> <span class="st">"Mediana"</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>media_inversion_publicidad_mediana</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4903.308</code></pre>
+</div>
+</div>
+<p>Lo que estamos haciendo aqui es filtrar la base de datos para que solo nos muestre los valores de la variable IP que correspondan a la categoria de tienda Mediana, luego calculamos la media de estos valores.</p>
+</section>
+<section id="graficos" class="level2">
+<h2 class="anchored" data-anchor-id="graficos">Graficos</h2>
+<p>Vamos a intentar hacer un grafico de barras para la variable <code>Región</code> y un grafico de dispersión para la variable <code>Inversión en Publicidad</code> y <code>Ventas Mensuales</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargamos la librería</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafico de barras para la variable Región</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_datos_economicos, <span class="fu">aes</span>(<span class="at">x =</span> Region)) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribución de las tiendas por región"</span>,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Región"</span>,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Frecuencia"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Entendiendo-los-Datos-de-Prueba_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Esto es un grafico usando la libreria <code>ggplot2</code>, lo que estoy haciendo es contar cuantas veces se repite cada categoria en la variable Region y luego graficar esto en un grafico de barras.</p>
+<p>Ahora bien para crear un grafico de dispersión necesitamos tener en cuenta que la variable <code>Inversión en Publicidad</code> y <code>Ventas Mensuales</code> son de tipo numerico, por lo que podemos hacer un grafico de dispersión.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafico de dispersión para la variable Inversión en Publicidad y Ventas Mensuales</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_datos_economicos, <span class="fu">aes</span>(<span class="at">x =</span> IP, <span class="at">y =</span> VM)) <span class="sc">+</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relación entre la inversión en publicidad y las ventas mensuales"</span>,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Inversión en Publicidad"</span>,</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Ventas Mensuales"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Entendiendo-los-Datos-de-Prueba_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Aun puedo hacer mas graficos, como un grafico de cajas para la variable <code>Tipo de Producto</code> y <code>Ventas Mensuales</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Grafico de cajas para la variable Tipo de Producto y Ventas Mensuales</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_datos_economicos, <span class="fu">aes</span>(<span class="at">x =</span> TP, <span class="at">y =</span> VM)) <span class="sc">+</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribución de las ventas mensuales por tipo de producto"</span>,</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Tipo de Producto"</span>,</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Ventas Mensuales"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Entendiendo-los-Datos-de-Prueba_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Este grafico de caja lo que me intenta decir es que tan dispersos estan los datos de la variable Ventas Mensuales para cada categoria de la variable Tipo de Producto.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Introducción a la Bitácora 📖">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introducción a la Bitácora 📖</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../qmd_files/references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

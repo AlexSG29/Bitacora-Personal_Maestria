@@ -1,0 +1,265 @@
+Region;TP;TT;PP;IP;VM;Empleados;DP
+Sur;Alimentos;Mediana;Proveedor A;2947;21764;NA;6,3
+Norte;Electrónicos;Pequeña;Proveedor C;4719;22280;50;11,8
+Norte;Electrónicos;Grande;NA;7950;23822;NA;10,1
+Sur;Ropa;Mediana;Proveedor C;6839;21796;NA;5,1
+Sur;Ropa;Grande;Proveedor C;7267;25214;NA;5,7
+NA;Ropa;Grande;Proveedor C;4216;15823;50;16,3
+Norte;Ropa;Mediana;Proveedor A;4399;18491;14;9
+Centro;Ropa;Pequeña;Proveedor C;6335;21194;NA;8,4
+Centro;Electrónicos;NA;Proveedor A;8852;25551;12;11,4
+NA;Alimentos;Mediana;Proveedor C;6388;23339;NA;12,6
+Norte;Alimentos;Grande;Proveedor B;3472;20703;NA;19,8
+Norte;Ropa;NA;Proveedor B;1557;22064;40;15,5
+Sur;Ropa;Mediana;Proveedor C;3156;15882;30;9,2
+Norte;Alimentos;NA;Proveedor C;7738;21769;33;18,9
+Sur;Electrónicos;Pequeña;Proveedor C;2400;17996;49;7,6
+Norte;Electrónicos;Pequeña;Proveedor C;5032;23046;36;7,2
+Sur;Alimentos;Mediana;Proveedor C;5544;17496;NA;10,4
+Norte;Alimentos;Grande;Proveedor B;3407;18559;39;10,5
+NA;Electrónicos;Mediana;Proveedor C;5863;10834;31;12,4
+Centro;Alimentos;Mediana;Proveedor A;8660;14279;NA;11,1
+Sur;Ropa;Mediana;Proveedor B;4903;17045;17;15,8
+Sur;Alimentos;Grande;Proveedor C;6916;20811;19;5,1
+Sur;Electrónicos;Pequeña;Proveedor A;6051;21047;NA;7
+Centro;Electrónicos;Mediana;Proveedor C;5344;20726;NA;8,8
+Norte;Electrónicos;Mediana;Proveedor B;3437;20975;12;19,6
+Norte;Electrónicos;Grande;Proveedor B;3757;24654;41;17,2
+NA;NA;Mediana;Proveedor A;3879;17015;NA;16,7
+Centro;Alimentos;Mediana;Proveedor A;5001;18553;36;8,2
+Centro;Alimentos;Pequeña;Proveedor B;2392;16047;32;11,1
+Sur;Ropa;Mediana;Proveedor B;5322;23439;30;11,2
+Centro;Alimentos;Mediana;Proveedor B;6367;22898;17;5,8
+Centro;Electrónicos;Grande;Proveedor A;5109;20453;47;12,6
+NA;Alimentos;Mediana;Proveedor A;6707;12193;46;13,4
+Sur;Electrónicos;Pequeña;Proveedor A;2574;22340;NA;5,3
+Norte;Electrónicos;NA;Proveedor A;6203;10487;29;10,9
+Sur;Ropa;Grande;Proveedor C;7278;22211;30;6,5
+Norte;NA;Grande;Proveedor B;3606;17453;32;6,7
+Sur;Alimentos;Grande;Proveedor B;7144;14227;45;16,7
+Centro;Ropa;Grande;NA;7136;21303;33;13,9
+Norte;Alimentos;Grande;Proveedor C;4366;24616;NA;16,6
+NA;Ropa;Pequeña;Proveedor A;6185;15767;17;17,3
+Norte;Alimentos;Grande;Proveedor B;5301;19520;20;11,9
+Norte;Alimentos;Grande;Proveedor C;4596;19148;30;7,6
+Sur;NA;Pequeña;NA;7129;19763;20;11,3
+NA;Ropa;Pequeña;Proveedor A;5611;25890;10;6,6
+Norte;NA;Grande;Proveedor B;3764;31845;40;17,4
+Norte;Electrónicos;Pequeña;Proveedor C;7724;23085;32;17,2
+Sur;Alimentos;NA;Proveedor A;7235;20780;28;14,2
+Centro;Electrónicos;Mediana;Proveedor A;3295;17017;NA;10,8
+Sur;Alimentos;Pequeña;Proveedor B;3407;34792;21;6,3
+Norte;Electrónicos;Pequeña;Proveedor C;6595;14763;19;5,9
+Norte;Alimentos;Grande;Proveedor B;4140;24557;42;10,8
+Sur;Ropa;Mediana;Proveedor A;6174;24455;17;8,3
+NA;Alimentos;Grande;Proveedor B;5455;15025;27;6,7
+Centro;Electrónicos;NA;Proveedor C;6684;19797;31;18,4
+NA;Alimentos;Pequeña;Proveedor A;6492;21615;20;19,5
+Sur;NA;Pequeña;Proveedor A;5218;15261;25;18,9
+Sur;NA;Mediana;NA;6031;22251;17;15
+Centro;Electrónicos;Grande;Proveedor B;4235;11702;15;18,7
+Norte;Electrónicos;Mediana;Proveedor B;6586;27210;39;13,6
+Sur;Alimentos;Mediana;Proveedor A;7613;12902;21;6,2
+Norte;Alimentos;Mediana;Proveedor C;5180;16835;20;13,7
+Sur;Ropa;Pequeña;Proveedor A;2581;18562;34;7,7
+Sur;Electrónicos;Pequeña;Proveedor A;4727;23803;NA;5,2
+NA;Alimentos;Mediana;Proveedor A;-401;10563;28;10,3
+Centro;Electrónicos;Pequeña;Proveedor A;4836;24201;31;9,2
+NA;Ropa;Mediana;Proveedor C;6798;16985;28;18,1
+Norte;NA;Pequeña;Proveedor C;4260;19200;NA;7,7
+NA;Ropa;Mediana;Proveedor B;3921;23244;45;10,6
+Sur;Alimentos;Mediana;NA;3858;14304;35;8,9
+Centro;Alimentos;Mediana;Proveedor C;5836;18673;49;18,7
+Centro;NA;Grande;Proveedor A;4086;17783;25;9,4
+NA;Ropa;Mediana;Proveedor C;2501;17112;31;10,8
+Norte;Electrónicos;Mediana;Proveedor C;7390;21569;NA;8,9
+Centro;NA;Pequeña;Proveedor A;4990;19151;28;18,1
+Norte;Electrónicos;Pequeña;Proveedor C;3666;14628;24;8,9
+Sur;Alimentos;NA;Proveedor C;7522;30827;19;8,2
+Sur;Ropa;Grande;Proveedor B;5899;12047;18;17,7
+Norte;Electrónicos;Pequeña;Proveedor B;3153;23430;48;7,1
+Norte;Ropa;Pequeña;Proveedor A;4508;17236;11;10,5
+NA;NA;Pequeña;Proveedor B;4072;14436;48;10,7
+NA;Ropa;Grande;NA;9105;16423;37;7,4
+Sur;Electrónicos;Mediana;Proveedor A;8192;14574;21;11,5
+Norte;Ropa;Mediana;Proveedor B;4587;25980;16;19,6
+NA;Electrónicos;Grande;Proveedor C;4136;19058;28;8,3
+Norte;NA;NA;NA;6314;16622;16;12,8
+Centro;Ropa;Mediana;Proveedor B;8324;18133;NA;14,1
+Sur;Electrónicos;Pequeña;Proveedor C;4783;9357;34;7,3
+Centro;NA;Pequeña;Proveedor C;6093;18245;34;13,1
+Sur;Electrónicos;Grande;NA;6147;13418;39;16,6
+Norte;Ropa;NA;Proveedor A;604;17461;31;7,6
+Centro;Electrónicos;Mediana;Proveedor A;4875;19685;23;13
+Sur;NA;Pequeña;Proveedor B;3851;23338;21;8
+Sur;NA;NA;Proveedor B;3991;24240;22;6,1
+Norte;Electrónicos;Grande;Proveedor C;8024;14997;28;5,5
+Norte;Electrónicos;Pequeña;Proveedor B;4021;19680;22;5,8
+NA;Ropa;NA;Proveedor B;5963;16194;39;18,6
+Sur;Alimentos;NA;Proveedor A;6474;22704;NA;5,1
+Norte;Alimentos;Grande;Proveedor A;1890;22633;NA;12,9
+Centro;Alimentos;Mediana;Proveedor A;3429;16223;14;19,4
+Centro;Alimentos;Mediana;Proveedor B;2491;16465;26;12,5
+Norte;Electrónicos;Pequeña;Proveedor B;6952;22844;21;19,1
+Sur;Ropa;Pequeña;Proveedor A;4469;19272;21;5,5
+Sur;Alimentos;Grande;Proveedor C;6057;21101;16;13,3
+Norte;Alimentos;NA;Proveedor B;2106;11372;35;7,3
+Norte;Ropa;NA;Proveedor A;3396;14794;11;10
+Norte;Electrónicos;Pequeña;Proveedor B;3372;20641;NA;11,1
+Sur;Alimentos;Pequeña;Proveedor C;775;21054;NA;13,9
+Norte;Ropa;Mediana;Proveedor B;7379;30033;23;12
+NA;Electrónicos;Grande;Proveedor A;4962;20397;24;15,6
+Norte;Electrónicos;Pequeña;Proveedor C;3557;19279;14;10,3
+Centro;Electrónicos;Mediana;Proveedor A;4940;13893;50;18,2
+Norte;Ropa;NA;Proveedor B;3285;23077;29;15,1
+Centro;Alimentos;NA;Proveedor B;3849;19692;38;7,7
+Sur;Electrónicos;NA;Proveedor B;2212;18180;25;18,7
+Sur;NA;Grande;Proveedor B;5848;17288;NA;19
+Sur;Electrónicos;NA;Proveedor B;4106;18369;33;19,2
+Centro;Electrónicos;Grande;NA;1035;25466;11;15,8
+Sur;Ropa;Pequeña;NA;2574;25322;36;5
+Sur;Electrónicos;Pequeña;Proveedor B;336;17498;49;6,3
+NA;Electrónicos;Pequeña;NA;9539;28848;NA;19
+Norte;NA;Grande;Proveedor C;4056;26165;43;12,3
+Norte;Electrónicos;Mediana;Proveedor C;5817;23072;22;13,8
+Sur;Alimentos;Grande;Proveedor C;3360;26636;24;7,3
+Norte;Electrónicos;NA;Proveedor B;6441;30867;NA;9,7
+Norte;Electrónicos;Mediana;Proveedor C;5852;25707;23;17,6
+Sur;NA;NA;Proveedor B;4953;14353;31;8,5
+Norte;Ropa;Pequeña;Proveedor B;4074;22732;23;9,7
+NA;Electrónicos;Grande;Proveedor B;486;26058;31;6
+Centro;Ropa;Grande;NA;5605;19176;20;18,6
+NA;Ropa;NA;Proveedor C;6229;19461;50;5,5
+Sur;Electrónicos;Mediana;Proveedor B;4464;14181;33;8,3
+Norte;NA;NA;Proveedor B;6319;11151;NA;10,6
+Sur;Ropa;Mediana;Proveedor A;2078;19457;40;9,5
+Sur;Electrónicos;NA;Proveedor B;6370;20629;25;10,9
+Centro;Electrónicos;Grande;Proveedor A;4014;28010;15;7,7
+NA;Ropa;Grande;Proveedor C;3080;22766;22;6,3
+Sur;NA;Mediana;NA;5256;15639;47;7,1
+Norte;Electrónicos;Pequeña;NA;6266;12313;49;9,8
+Norte;Alimentos;Pequeña;Proveedor C;4864;26084;38;16,6
+Centro;Alimentos;NA;Proveedor C;3803;13625;41;15,5
+Centro;NA;Grande;Proveedor C;7347;24738;25;15,9
+Sur;Alimentos;Pequeña;Proveedor A;5687;25125;40;8,3
+NA;Ropa;Mediana;Proveedor A;6157;21699;14;18,2
+Centro;Electrónicos;Grande;Proveedor C;6790;21954;36;18,5
+Sur;Ropa;Mediana;Proveedor C;4219;16915;23;13,2
+NA;Ropa;NA;Proveedor A;7353;20553;36;12,5
+Sur;Electrónicos;Grande;Proveedor A;5197;21057;16;15,4
+NA;Alimentos;Mediana;Proveedor C;6209;18182;39;17,7
+Norte;NA;Pequeña;Proveedor C;6270;20773;39;16,2
+Norte;Alimentos;Grande;Proveedor B;5032;15859;23;14
+Sur;Electrónicos;Mediana;Proveedor B;8554;20524;27;13,2
+Sur;Ropa;NA;Proveedor C;5312;20640;37;9,2
+Centro;Ropa;Mediana;Proveedor A;5824;31920;17;5,6
+Centro;Ropa;Mediana;NA;1366;20098;30;9,3
+Centro;Electrónicos;NA;Proveedor A;5600;21020;28;7,7
+Centro;Electrónicos;Pequeña;Proveedor B;6215;14841;39;18,4
+Sur;Alimentos;Mediana;Proveedor C;5197;24448;47;13
+Norte;Electrónicos;Grande;Proveedor C;3792;23155;44;19,5
+Sur;NA;Mediana;Proveedor B;5568;29521;22;12,8
+NA;Electrónicos;Mediana;Proveedor A;4185;24454;50;12,2
+NA;Ropa;Pequeña;Proveedor C;5724;18177;NA;11,4
+NA;Electrónicos;Pequeña;Proveedor A;2212;13949;NA;5,8
+Sur;Electrónicos;Mediana;Proveedor A;3807;11670;47;12,4
+Sur;NA;Mediana;Proveedor C;2232;15773;43;18,7
+Sur;Alimentos;Grande;Proveedor B;7660;19149;11;11,7
+Norte;Electrónicos;NA;Proveedor A;5034;25518;35;19
+Centro;NA;NA;NA;5110;15538;48;16,8
+Sur;Ropa;Mediana;Proveedor C;4749;25110;18;10,9
+NA;Electrónicos;Grande;Proveedor C;4131;28399;12;17,7
+Norte;NA;Grande;Proveedor A;3678;13683;10;12,9
+Norte;Alimentos;Pequeña;Proveedor C;2872;21600;39;15,9
+Centro;Ropa;Pequeña;Proveedor A;5293;26761;39;10,4
+Norte;Electrónicos;Mediana;NA;5930;21354;47;16
+Centro;Ropa;Grande;Proveedor C;4417;29321;NA;18,2
+Sur;NA;Pequeña;NA;5792;12993;23;13,9
+NA;Ropa;Pequeña;Proveedor C;4189;23800;12;10,8
+Norte;Ropa;NA;Proveedor B;6113;16471;NA;18,8
+Norte;Electrónicos;Mediana;Proveedor B;3834;27079;NA;12,4
+Norte;Alimentos;Grande;Proveedor B;4319;17551;48;18,2
+Sur;NA;NA;Proveedor C;5630;24952;26;6,6
+Sur;Alimentos;NA;NA;3785;14773;12;10,3
+Centro;Alimentos;NA;NA;6295;18841;38;8,6
+Norte;Electrónicos;Mediana;Proveedor B;2142;23763;33;19,6
+Sur;Alimentos;Pequeña;Proveedor A;6255;20970;18;5,8
+Norte;Electrónicos;Grande;NA;5110;15244;NA;7,4
+Norte;Alimentos;Pequeña;NA;5019;18598;NA;13,2
+Norte;Electrónicos;Mediana;Proveedor B;4452;16602;41;17,8
+Centro;Ropa;NA;NA;3205;22055;18;10
+Centro;Ropa;Mediana;Proveedor C;2507;17822;25;12,5
+Centro;NA;Mediana;Proveedor A;7960;29135;NA;19,3
+Norte;Alimentos;Pequeña;NA;6750;20409;39;7,8
+Centro;Alimentos;Mediana;NA;1464;19943;18;18,7
+Sur;Electrónicos;Mediana;NA;7661;19333;31;13,6
+Centro;Ropa;Grande;Proveedor B;4627;14385;44;17,8
+NA;Alimentos;Mediana;Proveedor C;4054;18430;17;19,9
+Sur;Electrónicos;NA;Proveedor A;3805;20369;22;12,3
+Norte;Ropa;Grande;Proveedor B;6114;12807;35;8,4
+Centro;Ropa;Pequeña;Proveedor A;5214;9133;36;10,8
+Norte;Ropa;NA;Proveedor A;6351;25116;45;16,7
+Sur;Electrónicos;Pequeña;Proveedor C;444;23635;32;14,1
+Centro;Ropa;Mediana;Proveedor B;4046;18308;39;10,3
+Norte;Electrónicos;Pequeña;Proveedor C;5959;26008;NA;8,1
+Centro;Electrónicos;Pequeña;Proveedor A;4488;23978;32;7,4
+Sur;NA;Mediana;Proveedor B;3878;17068;17;14,7
+Norte;Ropa;Grande;Proveedor B;6587;26963;36;17,6
+Centro;Alimentos;Grande;Proveedor A;5990;16780;38;15
+Sur;Ropa;Pequeña;Proveedor B;1957;25952;15;11,7
+Sur;NA;Pequeña;Proveedor B;4963;11723;15;18,2
+NA;Electrónicos;NA;Proveedor A;5490;21021;28;16,3
+Sur;Ropa;Pequeña;Proveedor C;3980;18762;22;18,6
+NA;Ropa;Pequeña;NA;6310;18857;19;6,4
+Sur;Ropa;Grande;Proveedor C;4456;28952;48;5,1
+Centro;Alimentos;NA;Proveedor B;4991;19354;34;10,8
+NA;Ropa;Grande;NA;6005;31232;28;19,6
+Sur;Alimentos;Grande;Proveedor C;5781;21425;32;10,9
+Sur;Alimentos;Pequeña;Proveedor B;4371;26742;NA;6,3
+Norte;Electrónicos;Mediana;Proveedor C;5729;24556;50;18,5
+Sur;Ropa;Pequeña;Proveedor C;5859;7901;31;19
+NA;Ropa;Pequeña;Proveedor B;2451;23611;18;5,3
+Sur;NA;Grande;NA;4053;34297;11;18,6
+Centro;NA;Mediana;Proveedor C;7934;14822;33;19,1
+Sur;Ropa;Grande;Proveedor C;1374;22897;14;6,3
+Sur;Ropa;Mediana;NA;3544;28991;NA;13,6
+Sur;Electrónicos;NA;Proveedor A;4280;26916;42;11,4
+Centro;Alimentos;NA;Proveedor C;7103;17614;NA;6,9
+Norte;Electrónicos;Grande;Proveedor A;6050;18563;41;16,9
+Norte;Ropa;NA;Proveedor C;4216;22565;49;10,7
+NA;Electrónicos;Grande;Proveedor C;6671;19530;42;11,6
+Centro;Alimentos;Grande;Proveedor C;7868;8864;28;15,1
+Sur;Electrónicos;Mediana;NA;3646;25702;43;12,4
+Centro;Ropa;Pequeña;NA;1233;18536;20;17,4
+Centro;Ropa;Mediana;NA;2500;21115;35;7,3
+Sur;NA;Grande;Proveedor C;8107;23147;32;10,5
+Sur;NA;NA;NA;7002;15325;NA;5,2
+Sur;Alimentos;Pequeña;Proveedor C;2641;17219;36;11,6
+Centro;Alimentos;NA;Proveedor A;5397;16418;NA;16,7
+Centro;Electrónicos;Grande;Proveedor C;5735;18921;34;7,6
+Sur;Alimentos;Grande;Proveedor C;5683;29466;10;7,6
+Sur;Ropa;Mediana;Proveedor A;1054;25670;NA;9,7
+Sur;Electrónicos;Mediana;Proveedor C;4609;16353;10;15,7
+Norte;NA;NA;Proveedor C;2146;30817;33;17,7
+NA;Electrónicos;Mediana;Proveedor A;4602;12603;14;16,8
+Sur;Ropa;Pequeña;Proveedor A;1893;12241;17;10,5
+Sur;Electrónicos;Grande;Proveedor A;3195;20958;NA;9,7
+Sur;Alimentos;Grande;Proveedor C;4390;25455;34;12,2
+Centro;Electrónicos;NA;Proveedor B;4373;22017;NA;12,8
+Sur;NA;Mediana;Proveedor A;6895;24189;29;18,3
+NA;Ropa;Mediana;Proveedor A;4107;16498;44;6,9
+Norte;Alimentos;Pequeña;Proveedor C;7903;17883;12;12,2
+Sur;Electrónicos;Grande;Proveedor B;4679;22893;48;6
+Centro;NA;Pequeña;Proveedor C;887;8753;41;14,2
+Centro;Electrónicos;Mediana;Proveedor A;7644;23192;21;8,5
+Norte;Alimentos;Pequeña;NA;5576;23631;26;16,7
+Sur;Electrónicos;Grande;Proveedor B;6122;23630;23;8,8
+NA;Ropa;Mediana;Proveedor B;3109;20188;37;15,8
+Centro;Electrónicos;Pequeña;Proveedor B;6911;17844;22;14,8
+Sur;Electrónicos;Pequeña;Proveedor C;2950;12843;46;18,8
+Norte;Electrónicos;Mediana;Proveedor C;3868;19829;15;7,6
+Norte;Ropa;Grande;Proveedor C;4388;19875;NA;19,3
+Centro;Ropa;Grande;Proveedor A;552;17742;42;8,5
+NA;Ropa;Pequeña;Proveedor B;3197;16547;38;7,4
+Norte;Ropa;Pequeña;Proveedor B;5451;17587;37;14,7
+Norte;Electrónicos;Pequeña;Proveedor B;7286;22724;24;17,7
