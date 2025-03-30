@@ -18,7 +18,7 @@ Este libro está desarrollado con:
 Organizar y facilitar mi aprendizaje de una forma estructurada, reproducible y accesible. Y, quién sabe, tal vez esta bitácora también inspire a otros entusiastas del análisis de datos. 🤓💡
 
 ## 🌐 Despliegue
-Puedes ver este libro en línea aquí: [NombreDeTuURL](https://alexsg29.github.io/Bitacora-Personal_Maestria/)
+Puedes ver este libro en línea aquí: [Bitacora Personal de Aprendizaje](https://alexsg29.github.io/Bitacora-Personal_Maestria/)
 
 ---
 
