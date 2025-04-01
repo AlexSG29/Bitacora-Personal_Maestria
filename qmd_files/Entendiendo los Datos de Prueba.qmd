@@ -16,6 +16,7 @@ df_datos_economicos <- read_delim("../assets/data/Bases de datos para practicar/
                                   )
 head(df_datos_economicos)
 ```
+
 Ahora bien, esta grafica mostrada aqui se ve algo fea, voy a intentar corregir la manera en que se representa la tabla.
 
 ```{r}
@@ -151,6 +152,3 @@ ggplot(df_datos_economicos, aes(x = TP, y = VM)) +
 ```
 
 Este grafico de caja lo que me intenta decir es que tan dispersos estan los datos de la variable Ventas Mensuales para cada categoria de la variable Tipo de Producto.
-
-
-

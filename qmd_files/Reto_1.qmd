@@ -1,0 +1,84 @@
+# Reto 1 🎓
+
+En este ejercicio, trabajaremos con una muestra aleatoria de egresados de la UTB, quienes proporcionaron información sobre las siguientes variables: - **Sexo:** Masculino o Femenino.\
+- **Edad:** En años.\
+- **Promedio final acumulado:** Nota promedio obtenida durante la carrera.\
+- **Ingresos estimados mensuales:** En dólares (USD).\
+- **Estado laboral:** Si actualmente están trabajando o no.\
+- **Altura:** En metros (m).\
+- **Peso:** En kilogramos (kg).\
+- **Estado civil:** Clasificado en tres categorías: - Soltero.\
+- Casado.\
+- Unión libre (Uni-lib).
+
+Puedes descargar el conjunto de datos desde: **`Egresados.csv`**.
+
+------------------------------------------------------------------------
+
+## 📂 Cargar los datos
+
+Para comenzar, necesitamos cargar el conjunto de datos y visualizar las primeras observaciones.
+
+```{r}
+# Cargar los datos
+df_egresados = read.delim("../assets/data/Reto_1/Egresados.csv", 
+                          sep = ";", 
+                          dec = ",",
+                          )
+df_egresados
+```
+
+
+------------------------------------------------------------------------
+
+## 📝 Tareas a realizar
+
+Responde las siguientes preguntas usando los datos proporcionados:
+
+1.  **Tamaño de la muestra:**\
+    Determinar cuántos egresados conforman la muestra total.
+    
+```{r}
+# Tamaño de la muestra
+nrow(df_egresados)
+```
+
+2.  **Número de mujeres:**\
+    Identificar cuántas mujeres están incluidas en la muestra.
+    
+```{r}
+# Número de mujeres
+sum(df_egresados$Sexo == "Mujer")
+```
+
+3.  **El egresado más joven:**\
+    Encontrar la edad del egresado más joven en la muestra.
+    
+```{r}
+# Egresado más joven
+min(df_egresados$Edad)
+```
+    
+
+4.  **Mujeres empleadas:**\
+    Determinar cuántas mujeres tienen empleo.
+    
+```{r}
+# Mujeres empleadas
+sum(df_egresados$Sexo == "Mujer" & df_egresados$Trabaja == "Si")
+```
+    
+
+5.  **Ingresos mayores a \$251:**\
+    Calcular cuántos egresados ganan más de 251 dólares al mes.
+    
+```{r}
+# Ingresos mayores a $251
+sum(df_egresados$Ingresos > 251)
+```
+    
+
+
+
+
+------------------------------------------------------------------------

@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - ./qmd_files/Entendiendo los Datos de Prueba.qmd
+    - ./qmd_files/Reto_1.qmd
     - ./qmd_files/references.qmd
 
 bibliography: references.bib
