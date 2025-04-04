@@ -15,7 +15,7 @@ Puedes descargar el conjunto de datos desde: **`Egresados.csv`**.
 
 ------------------------------------------------------------------------
 
-## 📂 Cargar los datos
+### 📂 Cargar los datos
 
 Para comenzar, necesitamos cargar el conjunto de datos y visualizar las primeras observaciones.
 
@@ -30,7 +30,7 @@ df_egresados
 
 ------------------------------------------------------------------------
 
-## 📝 Tareas a realizar
+### 📝 Tareas a realizar
 
 Responde las siguientes preguntas usando los datos proporcionados:
 
@@ -71,7 +71,7 @@ sum(df_egresados$Sexo == "Mujer" & df_egresados$Trabaja == "Si")
 
 ```{r}
 # Ingresos mayores a $251
-sum(df_egresados$Ingresos > 251)
+sum(df_egresados$Ingresos > 244)
 ```
 
 ------------------------------------------------------------------------
