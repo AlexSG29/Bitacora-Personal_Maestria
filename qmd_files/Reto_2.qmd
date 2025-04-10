@@ -32,8 +32,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 ```
 
-
 Ahora cargamos los datos usando pandas:
+
 ```{python}
 # Cargar los datos
 df = pd.read_csv("../assets/data/Reto_2/Icfes.csv", sep=";")
@@ -93,7 +93,6 @@ print(f"Coeficiente de asimetría para x: {coef_asimetria_x:.2f}")
 
 Podemos representar graficamente este coeficiente:
 
-
 ```{python}
 #Usamos seaborn
 sns.histplot(df["EDAD"], kde=True)
@@ -101,6 +100,7 @@ plt.axvline(df["EDAD"].mean(), color='r', linestyle='--', label='Media')
 plt.axvline(df["EDAD"].median(), color='g', linestyle='--', label='Mediana')
 plt.legend()
 ```
+
 El resultado de 0.92 indica una asimetría positiva, lo que significa que la cola derecha de la distribución es más larga o más gruesa que la izquierda.
 
 5.  **Coeficiente de asimetría para y**
@@ -120,6 +120,7 @@ plt.axvline(df["MA"].mean(), color='r', linestyle='--', label='Media')
 plt.axvline(df["MA"].median(), color='g', linestyle='--', label='Mediana')
 plt.legend()
 ```
+
 Este coeficiente para la variable y negativo nos indica una asimetría negativa, lo que significa que la cola izquierda de la distribución es más larga o más gruesa que la derecha.
 
 6.  **Curtosis para x**
@@ -138,8 +139,7 @@ curtosis_y = df["MA"].kurtosis()
 print(f"Curtosis para y: {curtosis_y:.2f}")
 ```
 
-La curtosis mide la "altura" de la distribución. Un valor positivo indica una distribución más alta y estrecha, mientras que un valor negativo indica una distribución más baja y ancha.
-Podemos representar ambas curtosis de la siguiente manera usando seaborn:
+La curtosis mide la "altura" de la distribución. Un valor positivo indica una distribución más alta y estrecha, mientras que un valor negativo indica una distribución más baja y ancha. Podemos representar ambas curtosis de la siguiente manera usando seaborn:
 
 ```{python}
 #Usamos seaborn
@@ -148,6 +148,7 @@ plt.axvline(df["EDAD"].mean(), color='r', linestyle='--', label='Media')
 plt.axvline(df["EDAD"].median(), color='g', linestyle='--', label='Mediana')
 plt.legend()
 ```
+
 ```{python}
 #Ahora para MA 
 sns.histplot(df["MA"], kde=True)
@@ -155,7 +156,6 @@ plt.axvline(df["MA"].mean(), color='r', linestyle='--', label='Media')
 plt.axvline(df["MA"].median(), color='g', linestyle='--', label='Mediana')
 plt.legend()
 ```
-
 
 8.  **Covarianza entre las variables x e y** (`Cov(x, y)`)
 
@@ -166,6 +166,7 @@ La covarianza representa la medida en que dos variables cambian juntas. Si ambas
 cov_xy = np.cov(df["EDAD"], df["MA"])[0][1]
 print(f"Cov(x, y): {cov_xy:.2f}")
 ```
+
 En este caso nos dio negativa la covarianza lo que significa que a medida que aumenta la edad, la puntuación en matemáticas tiende a disminuir.Esto lo podemos representar y verlo graficamente usando un grafico de dispersión:
 
 ```{python}
@@ -232,6 +233,7 @@ edad = 17
 resultado = pronostico_ma(edad)
 print(f"Pronóstico en MA para EDAD = {edad}: {resultado:.2f}")
 ```
+
 Esto se puede representar graficamente con un grafico de dispersión y la recta de regresión:
 
 ```{python}
@@ -291,6 +293,7 @@ print(f"Suma de los cuadrados de la regresión: {SCR:.2f}")
 18. **Suma de los cuadrados totales** (`SCT`)
 
 La suma de los cuadrados totales mide la variabilidad total en y. Se calcula como la suma de los cuadrados de las diferencias entre cada valor y la media de y.
+
 ```{python}
 # Suma de los cuadrados totales
 SCT = np.sum((df["MA"] - df["MA"].mean())**2)
@@ -330,5 +333,3 @@ media_errores_estandarizados = errores_estandarizados.mean()
 print(f"Media de los errores estandarizados: {media_errores_estandarizados:.2f}")
 
 ```
-
-

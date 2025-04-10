@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd_files/references.html" rel="next">
+<link href="../qmd_files/Reto_2.html" rel="next">
 <link href="../qmd_files/Entendiendo los Datos de Prueba.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -160,6 +160,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../qmd_files/Reto_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reto_2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../qmd_files/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -213,8 +219,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 - Unión libre (Uni-lib).</p>
 <p>Puedes descargar el conjunto de datos desde: <strong><code>Egresados.csv</code></strong>.</p>
 <hr>
-<section id="cargar-los-datos" class="level2">
-<h2 class="anchored" data-anchor-id="cargar-los-datos">📂 Cargar los datos</h2>
+<section id="cargar-los-datos" class="level3">
+<h3 class="anchored" data-anchor-id="cargar-los-datos">📂 Cargar los datos</h3>
 <p>Para comenzar, necesitamos cargar el conjunto de datos y visualizar las primeras observaciones.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargar los datos</span></span>
@@ -225,92 +231,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df_egresados</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Sexo Edad Promedio Ingresos Trabaja Altura   Peso   Civil
-1  Hombre   20      3.7      124      No   1.54  77.30  Casado
-2  Hombre   24      4.2       60      No   1.48  56.90 Soltero
-3  Hombre   23      3.9      175      Si   1.74  64.99 Uni-lib
-4   Mujer   22      4.1      144      Si   1.58  57.21 Soltero
-5  Hombre   21      3.6      174      Si   1.16  77.34 Uni-lib
-6  Hombre   23      4.2      224      No   1.86  77.47 Soltero
-7  Hombre   23      3.9      279      Si   1.31  52.20 Uni-lib
-8  Hombre   23      4.3      132      No   2.06  96.03 Uni-lib
-9   Mujer   24      3.7      161      Si   1.65 101.16 Soltero
-10  Mujer   24      3.8      142      Si   1.61  55.22  Casado
-11 Hombre   20      3.5      254      No   1.63  86.48 Soltero
-12 Hombre   23      3.7       87      No   1.48  59.34  Casado
-13 Hombre   22      4.0      230      No   1.86  56.65  Casado
-14  Mujer   20      4.1      251      No   1.83  64.99  Casado
-15 Hombre   26      4.5       79      Si   1.76 115.09  Casado
-16 Hombre   22      3.7      154      Si   1.48  81.07  Casado
-17  Mujer   18      4.1      242      Si   2.25  67.44  Casado
-18  Mujer   22      3.8      236      Si   1.66  41.04 Uni-lib
-19 Hombre   27      3.9      246      Si   1.74  59.01 Soltero
-20  Mujer   21      4.2      243      Si   1.90  51.42 Uni-lib
-21  Mujer   21      4.3      214      Si   1.28  31.98  Casado
-22 Hombre   24      4.6      258      Si   1.65  33.75 Uni-lib
-23 Hombre   19      3.8      138      Si   1.81  72.76 Soltero
-24 Hombre   27      4.0      204      No   1.60  62.83 Uni-lib
-25  Mujer   28      3.7      240      No   1.46  78.23 Soltero
-26 Hombre   22      4.0      177      No   1.44  54.78 Uni-lib
-27  Mujer   24      3.6      147      Si   1.83  33.43 Soltero
-28  Mujer   21      3.9      141      Si   1.26  75.41  Casado
-29  Mujer   24      4.1      218      Si   1.32  45.43 Soltero
-30  Mujer   26      4.2      240      Si   1.42  34.62 Soltero
-31 Hombre   26      4.3      216      No   1.50  79.36 Uni-lib
-32  Mujer   24      4.1      262      Si   1.66  65.02 Soltero
-33  Mujer   26      3.9      192      Si   1.56  67.54  Casado
-34  Mujer   22      3.9      230      Si   1.42  90.79  Casado
-35 Hombre   24      4.0      211      No   1.58  94.14  Casado
-36  Mujer   23      3.7      148      No   1.87  86.23  Casado
-37 Hombre   19      4.1      222      No   1.60  71.87  Casado
-38  Mujer   23      4.5      220      No   1.49 126.67  Casado
-39 Hombre   22      4.3      278      No   1.62  82.98  Casado
-40 Hombre   26      4.1      190      No   1.50  60.64  Casado
-41  Mujer   22      3.8      224      No   1.67  47.90 Soltero
-42 Hombre   23      4.5      230      Si   1.62  75.80  Casado
-43 Hombre   25      3.9      233      No   1.61  84.81  Casado
-44  Mujer   25      4.2      227      No   1.66  57.96  Casado
-45 Hombre   22      3.8      135      Si   1.59  66.79 Soltero
-46 Hombre   22      3.9      303      Si   1.63  56.73 Uni-lib
-47  Mujer   26      4.2      169      Si   1.91  59.51 Uni-lib
-48 Hombre   29      3.9      212      Si   1.31  76.74  Casado
-49 Hombre   25      4.3      158      No   1.99  87.72 Uni-lib
-50  Mujer   24      4.6      183      Si   1.95  90.04 Uni-lib
-51  Mujer   22      3.9      191      No   1.64  49.67 Uni-lib
-52 Hombre   22      4.2      205      No   1.62  90.21 Uni-lib
-53  Mujer   22      3.9      163      No   1.77  56.12 Soltero
-54  Mujer   21      4.1      133      Si   1.51  74.50 Soltero
-55 Hombre   24      3.8      255      No   1.67  75.73 Uni-lib
-56 Hombre   24      3.9      139      Si   1.80 101.78 Uni-lib
-57 Hombre   24      4.0      292      Si   1.70  81.29  Casado
-58 Hombre   22      3.9      235      No   1.58  47.78  Casado
-59 Hombre   22      3.8      268      No   1.46  61.49  Casado
-60  Mujer   23      4.4      199      No   1.64  51.77 Soltero
-61 Hombre   21      3.9      181      Si   1.55  70.32 Soltero
-62 Hombre   22      3.8      147      No   1.56  61.91 Soltero
-63  Mujer   26      4.4      191      Si   1.46  99.72  Casado
-64 Hombre   19      3.9      255      Si   1.62  40.58 Uni-lib
-65  Mujer   23      3.3      165      No   1.87  99.25 Soltero
-66 Hombre   24      4.0      178      Si   1.44  73.35 Soltero
-67 Hombre   22      4.5      204      Si   1.56  43.83 Soltero
-68  Mujer   19      3.8      215      No   1.65  66.21 Uni-lib
-69 Hombre   25      4.5      269      No   1.64  58.88 Soltero
-70  Mujer   22      3.9       82      Si   1.62  59.01 Uni-lib
-71  Mujer   22      4.3      267      Si   1.53  75.71 Uni-lib
-72  Mujer   24      3.8      234      No   1.60  77.20 Soltero
-73 Hombre   27      3.7      193      Si   1.61  79.25  Casado
-74  Mujer   24      4.2      223      No   1.53  78.24  Casado
-75  Mujer   23      3.5      132      Si   1.42  67.34  Casado
-76 Hombre   21      4.7      155      Si   1.48  89.50 Soltero
-77  Mujer   25      4.0      186      No   1.51  62.95 Uni-lib
-78  Mujer   22      4.0      233      No   1.59  98.24 Uni-lib
-79 Hombre   23      3.7      188      No   1.61  38.46 Soltero
-80 Hombre   22      4.1      288      No   1.60  98.14 Uni-lib</code></pre>
+1  Hombre   21      4.0      263      Si   1.48  50.19 Soltero
+2   Mujer   28      4.0      247      No   2.06  59.09 Uni-lib
+3  Hombre   22      3.5      230      Si   1.93  53.25 Uni-lib
+4   Mujer   23      3.4      192      No   1.76  63.86  Casado
+5   Mujer   25      3.6      204      No   1.78  84.68  Casado
+6  Hombre   24      4.5      307      No   1.44 115.12 Uni-lib
+7   Mujer   22      3.9      293      No   1.73  90.08 Soltero
+8   Mujer   22      3.6      152      No   2.02  52.95  Casado
+9   Mujer   24      4.1      334      No   1.80  56.92 Uni-lib
+10 Hombre   22      3.8      197      Si   1.59  87.16 Soltero
+11  Mujer   22      4.0      176      No   1.65  58.26 Soltero
+12 Hombre   22      3.9      184      No   1.84  50.06 Soltero
+13 Hombre   19      4.2      222      Si   1.46  56.34  Casado
+14 Hombre   22      3.8      242      Si   1.86  56.84  Casado
+15  Mujer   23      4.0      184      No   1.56  72.70 Uni-lib
+16  Mujer   23      3.5      254      Si   1.45  83.00 Uni-lib
+17 Hombre   23      3.7      251      No   1.77  41.66 Uni-lib
+18 Hombre   27      4.7      103      Si   2.01  61.91 Uni-lib
+19  Mujer   25      3.6      163      No   1.79  75.47 Soltero
+20 Hombre   25      3.7      182      No   1.61  56.76 Soltero
+21  Mujer   22      4.0      142      No   1.50  87.05 Uni-lib
+22  Mujer   25      4.1      161      No   1.68  68.87 Uni-lib
+23 Hombre   23      3.7      129      Si   1.67  57.26 Uni-lib
+24 Hombre   23      3.8      322      Si   1.52  61.61  Casado
+25  Mujer   21      3.8      142      No   1.74  51.24 Soltero
+26  Mujer   22      4.3      160      Si   1.52  78.51  Casado
+27 Hombre   23      3.8      159      No   1.64  58.08 Soltero
+28 Hombre   27      4.4      168      Si   1.50  53.80 Uni-lib
+29 Hombre   26      4.3      157      Si   1.60  78.85 Soltero
+30 Hombre   21      4.3      258      No   1.53  82.12 Uni-lib
+31 Hombre   23      4.5      306      Si   1.76 106.40  Casado
+32 Hombre   25      4.1      179      No   1.55  80.11  Casado
+33 Hombre   23      4.5      203      No   1.66  66.70  Casado
+34  Mujer   21      3.9      254      Si   1.47  79.12  Casado
+35 Hombre   25      4.2      146      Si   1.57  54.26 Soltero
+36  Mujer   25      3.8      200      No   1.57  57.17  Casado
+37 Hombre   22      4.0      186      No   1.58  86.12 Uni-lib
+38 Hombre   26      4.0      189      No   1.30  88.99 Uni-lib
+39 Hombre   23      4.1      207      Si   1.73  48.82 Soltero
+40 Hombre   22      4.3      128      Si   1.78  62.64  Casado
+41 Hombre   25      4.1      253      Si   1.44  45.96  Casado
+42  Mujer   23      4.1      244      Si   1.67  50.11 Uni-lib
+43  Mujer   23      4.0      225      No   1.52  89.30 Uni-lib
+44 Hombre   20      3.9      194      No   1.55  70.40  Casado
+45  Mujer   24      4.0      227      No   1.17  72.94 Soltero
+46 Hombre   22      3.7      204      Si   1.56  58.06 Uni-lib
+47  Mujer   23      4.1      240      Si   1.61  68.36 Uni-lib
+48 Hombre   21      3.7      144      Si   1.78  53.99 Uni-lib
+49  Mujer   19      4.0      167      Si   1.84  61.13  Casado
+50 Hombre   23      3.9      180      Si   1.90  80.77 Uni-lib
+51 Hombre   25      3.9      202      Si   1.77  92.98 Uni-lib
+52  Mujer   23      3.7      277      Si   1.54  74.12 Uni-lib
+53 Hombre   20      3.9      211      Si   1.55  44.45 Uni-lib
+54  Mujer   24      4.0      131      No   1.28  84.94 Soltero
+55  Mujer   22      4.0      147      Si   2.28  65.76  Casado
+56 Hombre   25      4.3      171      Si   1.43  62.91 Soltero
+57 Hombre   25      3.8      199      Si   1.54  75.69 Soltero
+58  Mujer   22      3.9      196      No   1.73  65.96  Casado
+59  Mujer   25      3.7      218      Si   1.70  92.51 Soltero
+60  Mujer   24      3.8      199      No   1.56  91.47 Uni-lib
+61  Mujer   23      4.0      264      No   1.76  53.92 Soltero
+62 Hombre   24      3.8      185      No   1.56  72.07  Casado
+63  Mujer   17      3.5      194      Si   1.21  77.44  Casado
+64 Hombre   23      3.8      198      No   1.46  73.42 Uni-lib
+65  Mujer   22      3.5      230      Si   1.86  64.38 Uni-lib
+66  Mujer   24      4.0      219      Si   1.59  40.19  Casado
+67 Hombre   23      4.1      197      No   1.79  50.51 Soltero
+68 Hombre   23      4.0      263      Si   1.59  52.34 Uni-lib
+69 Hombre   26      3.8      204      Si   1.82  70.25 Soltero
+70  Mujer   21      3.6      193      Si   1.38  61.96  Casado
+71 Hombre   23      3.6      177      Si   2.05  87.15 Uni-lib
+72  Mujer   25      3.9      151      Si   1.52  55.35 Soltero
+73 Hombre   24      3.8      111      Si   2.20  73.04  Casado
+74 Hombre   23      4.5      304      No   1.45  54.99  Casado
+75 Hombre   21      4.3      197      Si   1.36  54.56 Soltero
+76 Hombre   21      3.9       80      Si   1.54  67.47 Soltero
+77  Mujer   22      4.0      202      No   1.45  92.94 Soltero
+78  Mujer   26      3.9      194      Si   1.78  82.09 Uni-lib
+79  Mujer   23      4.3      131      Si   1.38  81.46  Casado
+80  Mujer   25      4.4      235      Si   1.36  99.13 Uni-lib</code></pre>
 </div>
 </div>
 <hr>
 </section>
-<section id="tareas-a-realizar" class="level2">
-<h2 class="anchored" data-anchor-id="tareas-a-realizar">📝 Tareas a realizar</h2>
+<section id="tareas-a-realizar" class="level3">
+<h3 class="anchored" data-anchor-id="tareas-a-realizar">📝 Tareas a realizar</h3>
 <p>Responde las siguientes preguntas usando los datos proporcionados:</p>
 <ol type="1">
 <li><strong>Tamaño de la muestra:</strong><br>
@@ -331,7 +337,7 @@ Identificar cuántas mujeres están incluidas en la muestra.</li>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Número de mujeres</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df_egresados<span class="sc">$</span>Sexo <span class="sc">==</span> <span class="st">"Mujer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 36</code></pre>
+<pre><code>[1] 37</code></pre>
 </div>
 </div>
 <ol start="3" type="1">
@@ -342,7 +348,7 @@ Encontrar la edad del egresado más joven en la muestra.</li>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Egresado más joven</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(df_egresados<span class="sc">$</span>Edad)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 18</code></pre>
+<pre><code>[1] 17</code></pre>
 </div>
 </div>
 <ol start="4" type="1">
@@ -353,7 +359,7 @@ Determinar cuántas mujeres tienen empleo.</li>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mujeres empleadas</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df_egresados<span class="sc">$</span>Sexo <span class="sc">==</span> <span class="st">"Mujer"</span> <span class="sc">&amp;</span> df_egresados<span class="sc">$</span>Trabaja <span class="sc">==</span> <span class="st">"Si"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 21</code></pre>
+<pre><code>[1] 17</code></pre>
 </div>
 </div>
 <ol start="5" type="1">
@@ -362,9 +368,9 @@ Calcular cuántos egresados ganan más de 251 dólares al mes.</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ingresos mayores a $251</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df_egresados<span class="sc">$</span>Ingresos <span class="sc">&gt;</span> <span class="dv">251</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(df_egresados<span class="sc">$</span>Ingresos <span class="sc">&gt;</span> <span class="dv">244</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 13</code></pre>
+<pre><code>[1] 16</code></pre>
 </div>
 </div>
 <hr>
@@ -797,8 +803,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd_files/references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd_files/Reto_2.html" class="pagination-link" aria-label="Reto_2">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reto_2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
